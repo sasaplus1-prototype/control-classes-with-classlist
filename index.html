@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf-8">
+    <title>control classes with classList</title>
+    <style>
+      div{
+        margin: 1rem;
+      }
+
+      .change {
+        background-color: gray;
+      }
+      .toggle {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="js-button-div-add">
+      <input id="js-button-add" type="button" value="add class">
+    </div>
+
+    <div id="js-button-div-remove" class="change">
+      <input id="js-button-remove" type="button" value="remove class">
+    </div>
+
+    <div>
+      <label id="js-checkbox-label">
+        <input id="js-checkbox" type="checkbox">toggle class
+      </label>
+      <p>
+        Is checkbox contains class? <span id="js-checkbox-state"></span>
+      </p>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
